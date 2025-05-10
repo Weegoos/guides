@@ -1,4 +1,4 @@
-# Get Started
+# Tailwind + Quasar
 
 This is a normal page, which contains VuePress basics.
 

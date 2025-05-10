@@ -1,14 +1,14 @@
 ---
 home: true
-title: Home
+title: Домой
 heroImage: /images/docs/code_logo.png
 actions:
-  - text: Get Started
+  - text: Tailwind + Quasar
     link: /get-started.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: Допольнительно
+    link: /get-additional.md
     type: secondary
 
 features:
@@ -19,7 +19,7 @@ features:
 
   - title: Дополнительно
     details: Различные советы и подсказки, которые не вошли в другие категории, но могут пригодиться в работе.
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: Copyright © 2025-present 
 ---
 
 Автор: **Батыр Ашим**
