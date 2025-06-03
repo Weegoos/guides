@@ -6,27 +6,25 @@
 
 ## Cordova + Quasar
 
-### Установка 
-
-```bash
-quasar mode add cordova
-```
-### Переход в папку 
-
-```bash
-cd src-cordova
-```
-### Инициализация 
-```bash
-cordova platform add [android|ios]
-```
-
 ### Как создавать APK
 
-```bash
-cordova clean
-cordova build android
-```
+1. Удаляем ранее созданный dist/spa во фронте
+
+    ```bash
+    rm -rf dist/spa
+    ```
+
+2. Оставаясь в папке фронта, не переходя src-cordova, создаем сборку
+
+    ```bash
+    quasar build -m cordova -T android
+    ```
+3. Переходим в папку src-cordova
+
+    ```bash
+    cd src-cordova
+    cordova build android //в папке запускаем
+    ```
 
 ## Vue press 
 ### Установка
