@@ -1,23 +1,59 @@
-<template><div><h1 id="tailwind-quasar" tabindex="-1"><a class="header-anchor" href="#tailwind-quasar"><span>Tailwind + Quasar</span></a></h1>
-<p>This is a normal page, which contains VuePress basics.</p>
-<h2 id="pages" tabindex="-1"><a class="header-anchor" href="#pages"><span>Pages</span></a></h2>
-<p>You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.</p>
-<p>See <a href="https://vuejs.press/guide/page.html#routing" target="_blank" rel="noopener noreferrer">routing</a> for more details.</p>
-<h2 id="content" tabindex="-1"><a class="header-anchor" href="#content"><span>Content</span></a></h2>
-<p>Every markdown file <a href="https://vuejs.press/guide/page.html#content" target="_blank" rel="noopener noreferrer">will be rendered to HTML, then converted to a Vue SFC</a>.</p>
-<p>VuePress support basic markdown syntax and <a href="https://vuejs.press/guide/markdown.html#syntax-extensions" target="_blank" rel="noopener noreferrer">some extensions</a>, you can also <a href="https://vuejs.press/guide/markdown.html#using-vue-in-markdown" target="_blank" rel="noopener noreferrer">use Vue features</a> in it.</p>
-<h2 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration"><span>Configuration</span></a></h2>
-<p>VuePress use a <code v-pre>.vuepress/config.js</code>(or .ts) file as <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">site configuration</a>, you can use it to config your site.</p>
-<p>For <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">client side configuration</a>, you can create <code v-pre>.vuepress/client.js</code>(or .ts).</p>
-<p>Meanwhile, you can also add configuration per page with <a href="https://vuejs.press/guide/page.html#frontmatter" target="_blank" rel="noopener noreferrer">frontmatter</a>.</p>
-<h2 id="layouts-and-customization" tabindex="-1"><a class="header-anchor" href="#layouts-and-customization"><span>Layouts and customization</span></a></h2>
-<p>Here are common configuration controlling layout of <code v-pre>@vuepress/theme-default</code>:</p>
-<ul>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#navbar" target="_blank" rel="noopener noreferrer">navbar</a></li>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#sidebar" target="_blank" rel="noopener noreferrer">sidebar</a></li>
-</ul>
-<p>Check <a href="https://vuejs.press/reference/default-theme/" target="_blank" rel="noopener noreferrer">default theme docs</a> for full reference.</p>
-<p>You can <a href="https://vuejs.press/reference/default-theme/styles.html#style-file" target="_blank" rel="noopener noreferrer">add extra style</a> with <code v-pre>.vuepress/styles/index.scss</code> file.</p>
-</div></template>
+<template><div><h1 id="front-end" tabindex="-1"><a class="header-anchor" href="#front-end"><span>Front-end</span></a></h1>
+<p>Гайды как запускать и работать с Tailwind CSS, Quasar, Vue-press</p>
+<h2 id="docker" tabindex="-1"><a class="header-anchor" href="#docker"><span>Docker</span></a></h2>
+<h2 id="cordova-quasar" tabindex="-1"><a class="header-anchor" href="#cordova-quasar"><span>Cordova + Quasar</span></a></h2>
+<h3 id="установка" tabindex="-1"><a class="header-anchor" href="#установка"><span>Установка</span></a></h3>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line">quasar mode <span class="token function">add</span> cordova</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="переход-в-папку" tabindex="-1"><a class="header-anchor" href="#переход-в-папку"><span>Переход в папку</span></a></h3>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token builtin class-name">cd</span> src-cordova</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="инициализация" tabindex="-1"><a class="header-anchor" href="#инициализация"><span>Инициализация</span></a></h3>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line">cordova platform <span class="token function">add</span> <span class="token punctuation">[</span>android<span class="token operator">|</span>ios<span class="token punctuation">]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="как-создавать-apk" tabindex="-1"><a class="header-anchor" href="#как-создавать-apk"><span>Как создавать APK</span></a></h3>
+<h2 id="vue-press" tabindex="-1"><a class="header-anchor" href="#vue-press"><span>Vue press</span></a></h2>
+<h3 id="установка-1" tabindex="-1"><a class="header-anchor" href="#установка-1"><span>Установка</span></a></h3>
+<ol>
+<li>Создание проекта VuePress:</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token function">npm</span> init vuepress vuepress-starter</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="2">
+<li>Переход в папку проекта и инициализация Git:</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token builtin class-name">cd</span> vuepress-starter</span>
+<span class="line"><span class="token function">git</span> init</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="3">
+<li>Инициализация:</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token function">npm</span> init</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="4">
+<li>Установка VuePress</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> vuepress@next</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="как-запускать" tabindex="-1"><a class="header-anchor" href="#как-запускать"><span>Как запускать</span></a></h3>
+<ol>
+<li>Переход в нужную папку:</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token builtin class-name">cd</span> vuepress-starter/</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="2">
+<li>Запускаем проект</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token function">npm</span> run docs:dev</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="как-изменить-фотографию-на-главнои-странице" tabindex="-1"><a class="header-anchor" href="#как-изменить-фотографию-на-главнои-странице"><span>Как изменить фотографию на главной странице?</span></a></h3>
+<h4 id="_1-создаем-папку-public-в-docs-vuepress" tabindex="-1"><a class="header-anchor" href="#_1-создаем-папку-public-в-docs-vuepress"><span>1. Создаем папку public в .docs/.vuepress/</span></a></h4>
+<h4 id="_2-создаем-папки-docs-vuepress-public-images-docs-здесь-будут-храниться-фотографии" tabindex="-1"><a class="header-anchor" href="#_2-создаем-папки-docs-vuepress-public-images-docs-здесь-будут-храниться-фотографии"><span>2. Создаем папки docs/.vuepress/public/images/docs/ (здесь будут храниться фотографии)</span></a></h4>
+<h4 id="_3-переходим-readme-md-и-меняем-иконку" tabindex="-1"><a class="header-anchor" href="#_3-переходим-readme-md-и-меняем-иконку"><span>3. Переходим README.md и меняем иконку</span></a></h4>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line">home: <span class="token boolean">true</span></span>
+<span class="line">title: Домой</span>
+<span class="line">heroImage: /images/docs/code_logo.png</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

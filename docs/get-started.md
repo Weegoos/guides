@@ -1,46 +1,73 @@
-# Tailwind + Quasar
+# Front-end
 
-This is a normal page, which contains VuePress basics.
+Гайды как запускать и работать с Tailwind CSS, Quasar, Vue-press
 
-## Pages
+## Docker
 
-You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
+## Cordova + Quasar
 
-See [routing][] for more details.
+### Установка 
 
-## Content
+```bash
+quasar mode add cordova
+```
+### Переход в папку 
 
-Every markdown file [will be rendered to HTML, then converted to a Vue SFC][content].
+```bash
+cd src-cordova
+```
+### Инициализация 
+```bash
+cordova platform add [android|ios]
+```
 
-VuePress support basic markdown syntax and [some extensions][synatex-extensions], you can also [use Vue features][vue-feature] in it.
+### Как создавать APK
 
-## Configuration
+```bash
+cordova clean
+cordova build android
+```
 
-VuePress use a `.vuepress/config.js`(or .ts) file as [site configuration][config], you can use it to config your site.
+## Vue press 
+### Установка
+1.  Создание проекта VuePress:
+```bash
+npm init vuepress vuepress-starter
+```
 
-For [client side configuration][client-config], you can create `.vuepress/client.js`(or .ts).
+2.  Переход в папку проекта и инициализация Git:
+```bash
+cd vuepress-starter
+git init
+```
 
-Meanwhile, you can also add configuration per page with [frontmatter][].
+3. Инициализация:
+```bash
+npm init
+```
 
-## Layouts and customization
+4. Установка VuePress
 
-Here are common configuration controlling layout of `@vuepress/theme-default`:
+```bash
+npm install -D vuepress@next
+```
 
-- [navbar][]
-- [sidebar][]
+### Как запускать
+1. Переход в нужную папку: 
+```bash
+cd vuepress-starter/
+```
 
-Check [default theme docs][default-theme] for full reference.
-
-You can [add extra style][style] with `.vuepress/styles/index.scss` file.
-
-[routing]: https://vuejs.press/guide/page.html#routing
-[content]: https://vuejs.press/guide/page.html#content
-[synatex-extensions]: https://vuejs.press/guide/markdown.html#syntax-extensions
-[vue-feature]: https://vuejs.press/guide/markdown.html#using-vue-in-markdown
-[config]: https://vuejs.press/guide/configuration.html#client-config-file
-[client-config]: https://vuejs.press/guide/configuration.html#client-config-file
-[frontmatter]: https://vuejs.press/guide/page.html#frontmatter
-[navbar]: https://vuejs.press/reference/default-theme/config.html#navbar
-[sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
-[default-theme]: https://vuejs.press/reference/default-theme/
-[style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+2. Запускаем проект 
+```bash
+npm run docs:dev
+```
+### Как изменить фотографию на главной странице?
+#### 1. Создаем папку public в .docs/.vuepress/
+#### 2. Создаем папки docs/.vuepress/public/images/docs/ (здесь будут храниться фотографии)
+#### 3. Переходим README.md и меняем иконку 
+```bash
+home: true
+title: Домой
+heroImage: /images/docs/code_logo.png
+```

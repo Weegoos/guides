@@ -3,7 +3,7 @@ home: true
 title: Домой
 heroImage: /images/docs/code_logo.png
 actions:
-  - text: Tailwind + Quasar
+  - text: Front-end
     link: /get-started.html
     type: primary
 
@@ -12,7 +12,7 @@ actions:
     type: secondary
 
 features:
-  - title: Tailwind + Quasar
+  - title: Front-end
     details: Базовые настройки и конфигурация проекта с использованием Tailwind CSS и Quasar Framework для быстрого старта.
   - title: Docker
     details: Руководство по установке и базовой настройке проектов с использованием Docker.
