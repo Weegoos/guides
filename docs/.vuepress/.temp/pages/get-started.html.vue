@@ -2,18 +2,27 @@
 <p>Гайды как запускать и работать с Tailwind CSS, Quasar, Vue-press</p>
 <h2 id="docker" tabindex="-1"><a class="header-anchor" href="#docker"><span>Docker</span></a></h2>
 <h2 id="cordova-quasar" tabindex="-1"><a class="header-anchor" href="#cordova-quasar"><span>Cordova + Quasar</span></a></h2>
-<h3 id="установка" tabindex="-1"><a class="header-anchor" href="#установка"><span>Установка</span></a></h3>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line">quasar mode <span class="token function">add</span> cordova</span>
+<h3 id="как-создавать-apk" tabindex="-1"><a class="header-anchor" href="#как-создавать-apk"><span>Как создавать APK</span></a></h3>
+<ol>
+<li>
+<p>Удаляем ранее созданный dist/spa во фронте</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token function">rm</span> <span class="token parameter variable">-rf</span> dist/spa</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="переход-в-папку" tabindex="-1"><a class="header-anchor" href="#переход-в-папку"><span>Переход в папку</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<li>
+<p>Оставаясь в папке фронта, не переходя src-cordova, создаем сборку</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line">quasar build <span class="token parameter variable">-m</span> cordova <span class="token parameter variable">-T</span> android</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<li>
+<p>Переходим в папку src-cordova</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token builtin class-name">cd</span> src-cordova</span>
+<span class="line">cordova build android //в папке запускаем</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="инициализация" tabindex="-1"><a class="header-anchor" href="#инициализация"><span>Инициализация</span></a></h3>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line">cordova platform <span class="token function">add</span> <span class="token punctuation">[</span>android<span class="token operator">|</span>ios<span class="token punctuation">]</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="как-создавать-apk" tabindex="-1"><a class="header-anchor" href="#как-создавать-apk"><span>Как создавать APK</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
 <h2 id="vue-press" tabindex="-1"><a class="header-anchor" href="#vue-press"><span>Vue press</span></a></h2>
-<h3 id="установка-1" tabindex="-1"><a class="header-anchor" href="#установка-1"><span>Установка</span></a></h3>
+<h3 id="установка" tabindex="-1"><a class="header-anchor" href="#установка"><span>Установка</span></a></h3>
 <ol>
 <li>Создание проекта VuePress:</li>
 </ol>

@@ -1,16 +1,3 @@
 import comp from "/home/batyr_ashim/Рабочий стол/Мои проекты/vue press guide /vuepress-starter/docs/.vuepress/.temp/pages/get-additional.html.vue"
 const data = JSON.parse("{\"path\":\"/get-additional.html\",\"title\":\"Допольнительно\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Как изменить порт PostgreSQL 16\",\"slug\":\"как-изменить-порт-postgresql-16\",\"link\":\"#как-изменить-порт-postgresql-16\",\"children\":[]}],\"git\":{\"updatedTime\":1746881872000,\"contributors\":[{\"name\":\"Weegoos\",\"username\":\"Weegoos\",\"email\":\"batyr.ashim05@mail.ru\",\"commits\":1,\"url\":\"https://github.com/Weegoos\"}],\"changelog\":[{\"hash\":\"481cb41306261d50d9b8e2a989d328053b4f1d30\",\"time\":1746881872000,\"email\":\"batyr.ashim05@mail.ru\",\"author\":\"Weegoos\",\"message\":\"The information about PostgreSQL has been updated\"}]},\"filePathRelative\":\"get-additional.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
