@@ -4,6 +4,41 @@
 
 ## Docker
 
+## Redis
+
+### Как соединиться с Redis
+1. Устанавливаем Redis в проект
+
+    ```
+    npm install redis
+    ```
+
+2. Установка Redis (классический способ):
+    ```
+    sudo apt update
+    sudo apt install redis-server
+    ```
+    Это установит и сервер, и redis-cli.
+
+ 3. Проверь, работает ли Redis:
+    
+    ### Запусти сервер
+    ```
+    sudo systemctl start redis-server
+    ```
+    ### Проверка Redis
+    ```
+    redis-cli ping
+    ```
+
+    ### Интеграция в проект 
+    ```
+    import { createClient } from "redis"; 
+
+    const client = createClient();
+    client.on("error", (err) => console.log("Redis Client Error", err));
+    ```
+
 ## Cordova + Quasar
 
 ### Как создавать APK
