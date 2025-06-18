@@ -9,12 +9,12 @@
 ### Как соединиться с Redis
 1. Устанавливаем Redis в проект
 
-    ```
+    ```bash
     npm install redis
     ```
 
-2. Установка Redis (классический способ):
-    ```
+2.  Установка Redis (классический способ):
+    ```bash
     sudo apt update
     sudo apt install redis-server
     ```
@@ -22,18 +22,18 @@
 
  3. Проверь, работает ли Redis:
     
-    ### Запусти сервер
-    ```
+    ### Запуск сервера
+    ```bash
     sudo systemctl start redis-server
     ```
     ### Проверка Redis
-    ```
+    ```bash
     redis-cli ping
     ```
 
     ### Интеграция в проект 
-    ```
-    import { createClient } from "redis"; 
+    ```bash
+    import { createClient } from "redis"; // импортируем пакеты
 
     const client = createClient();
     client.on("error", (err) => console.log("Redis Client Error", err));
